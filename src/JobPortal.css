@@ -1,0 +1,432 @@
+/* JobPortal.css */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.job-portal {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #121b52;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 10px;
+  color: #fff;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #777;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Job Offers Section */
+.job-offers {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.job-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.job-card a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.job-card a:hover {
+  background-color: #555;
+}
+
+/* Someone Needs Your Team Section */
+.someone-needs-your-team {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.card-content a:hover {
+  background-color: #555;
+}
+
+/* Reviews Section */
+.reviews {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Support Section */
+.support-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.support-content {
+  width: 60%;
+}
+
+.support-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.support-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.support-content button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.support-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Form */
+.contact-us {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.contact-us h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-us form div {
+  margin-bottom: 20px;
+}
+
+.contact-us form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-us textarea {
+  resize: vertical;
+}
+
+.contact-us button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Optional: Add some spacing between form elements */
+.contact-us form div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+
+/* Blog Section */
+.blog-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.blog-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blog-card-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-card-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-card-content a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.blog-card-content a:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
+/* How Does it Work Section */
+.how-it-works-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 200px;
+  background-color: #333;
+  margin-right: 40px;
+  position: absolute;
+  
+}
+
+.how-it-works-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.how-it-works-item {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.how-it-works-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.how-it-works-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.how-it-works-item p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
