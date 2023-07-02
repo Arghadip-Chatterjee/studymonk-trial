@@ -1,0 +1,16 @@
+@keyframes slide-in-up-animation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-in-up {
+    opacity: 0;
+    animation: slide-in-up-animation 0.5s ease-in-out forwards;
+  }
+  

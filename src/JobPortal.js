@@ -49,6 +49,7 @@ const JobPortal = () => {
         <div className='w-full flex-col'>
           <h1 className="text-4xl font-bold mb-2 text-white">Job Portal</h1>
           <p className="text-lg text-white">Find your dream job today!</p>
+          <p className="text-lg text-white">Search Real Time Jobs as it is fetched Through API calling. Get Jobs Vacancies From Top Companies</p>
           <form className="mt-4">
             <input
               type="text"
