@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import firebase from "./firebase"; // Import the firebase instance from your firebase.js file
 import { useNavigate } from "react-router-dom";
+import landing_page_image from "./landing_page_image.svg"
 
 
 function LandingPage() {
@@ -50,7 +51,7 @@ function LandingPage() {
         <main className="h-full">
 
             {/* This is the navbar of the page */}
-            <nav className="w-full h-24 bg-black flex justify-between p-4">
+            <nav className="w-full h-16 bg-black flex justify-between p-4">
                 <div className="p-4">
                     <a className="text-2xl text-white font-semibold font-mono cursor-pointer" href="#">Job Portal</a>
                 </div>
@@ -108,6 +109,10 @@ function LandingPage() {
 
                     <div className="w-1/2">
                         {/* <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" /> */}
+                        <div className="p-20 pt-40 pl-40 rounded-full mt-10">
+                            <img src={landing_page_image} alt="Landing Page Image" className="rounded-full bg-white" />
+                        </div>
+                        {/* <img src="landingpage.jpg" alt="" /> */}
                     </div>
                 </div>
             </section>

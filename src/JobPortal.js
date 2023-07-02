@@ -43,19 +43,25 @@ const JobPortal = () => {
   return (
     <div className="job-portal h-screen w-full bg-black py-8">
       {/* Header */}
-      <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2 text-white">Job Portal</h1>
-        <p className="text-lg text-white">Find your dream job today!</p>
-        <form className="mt-4">
-          <input
-            type="text"
-            placeholder="Search jobs..."
-            value={searchQuery}
-            onChange={handleInputChange}
-            className="px-4 py-2 border border-gray-300 rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            autoFocus
-          />
-        </form>
+      <header className="text-center w-full mb-8 flex jutify-center">
+        <div></div>
+
+        <div className='w-full flex-col'>
+          <h1 className="text-4xl font-bold mb-2 text-white">Job Portal</h1>
+          <p className="text-lg text-white">Find your dream job today!</p>
+          <form className="mt-4">
+            <input
+              type="text"
+              placeholder="Search jobs..."
+              value={searchQuery}
+              onChange={handleInputChange}
+              className="px-4 py-2 border border-gray-300 rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              autoFocus
+            />
+          </form>
+        </div>
+
+        <div></div>
       </header>
 
       {/* Job Offers Section */}

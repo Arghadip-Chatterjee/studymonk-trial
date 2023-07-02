@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import firebase from "./firebase"; // Import the firebase instance from your firebase.js file
 import { useNavigate } from "react-router-dom";
+import loingImage from "./loginImage.svg";
+import jobseeker from "./jobseeker.svg"
 
 function Login() {
 
@@ -26,9 +28,10 @@ function Login() {
     return (
         <main className="w-screen h-screen">
             <div className="flex justify-between w-full h-full">
-                <div className="w-[40%] h-full bg-black text-white">
+                <div className="w-[40%] h-full bg-white text-white">
                     {/* This place is left for adding image */}
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="fill aspect-auto" />
+                    {/* <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="fill aspect-auto" /> */}
+                    <img src={loingImage} alt="Login image"  className="w-full h-full"/>
                 </div>
 
                 {/* This is the main login form of the page */}
@@ -44,17 +47,18 @@ function Login() {
                                 <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="job seeker image" className="w-24 h-24 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 pt-2" />
 
                                 <div className="flex justify-center">
-                                    <p className="text-white">Recruiter</p>
+                                    <p className="text-white font-mono">Recruiter</p>
                                 </div>
                             </div>
                             <div className="w-1 h-32 bg-zinc-200 rounded"></div>
                             <div className="flex-col space-y-2">
 
                                 {/* image to be added over here */}
-                                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="job seeker image" className="w-24 h-24 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 pt-2" />
+                                {/* <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="job seeker image" className="w-24 h-24 rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 pt-2" /> */}
+                                <img src={jobseeker} alt="" className="rounded-full w-24 h-24 aspect-square" />
 
                                 <div className="flex justify-center">
-                                    <p className="text-white">Job Seeker</p>
+                                    <p className="text-white font-mono">Job Seeker</p>
                                 </div>
                             </div>
                         </div>
