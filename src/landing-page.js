@@ -27,20 +27,17 @@ function LandingPage() {
         const fetchData = async () => {
             const options = {
                 method: 'GET',
-                url: 'https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote',
-                params: {
-                    token: 'ipworld.info'
-                },
+                url: 'https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes',
                 headers: {
                     'X-RapidAPI-Key': '1b43b998e8mshecf18b614780362p1be75ejsne18f9cebbd57',
-                    'X-RapidAPI-Host': 'quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com'
+                    'X-RapidAPI-Host': 'quotes-by-api-ninjas.p.rapidapi.com'
                 }
             };
 
             try {
                 const response = await axios.request(options);
-                setQuote(response.data.text);
-                setauthor(response.data.author);
+                setQuote(response.data[0].quote);
+                setauthor(response.data[0].author);
             } catch (error) {
                 console.error(error);
             }
