@@ -53,27 +53,27 @@ function LandingPage() {
         <main className="h-full">
 
             {/* This is the navbar of the page */}
-            <nav className="w-full h-24 bg-zinc-800 flex justify-between p-4">
+            <nav className="w-full h-24 bg-black flex justify-between p-4">
                 <div className="p-4">
-                    <p className="text-2xl text-white font-semibold font-mono">Job Portal</p>
+                    <a className="text-2xl text-white font-semibold font-mono cursor-pointer" href="#">Job Portal</a>
                 </div>
 
                 <div className="flex items-center space-x-10">
                     <ul className="flex justify-between space-x-10">
                         <li>
-                            <a href="#" className="text-2xl font-mono text-blue-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                            <a href="#" className="text-lg font-mono text-blue-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="text-lg font-mono text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                            <a href="#" className="text-lg font-mono text-white hover:text-blue-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                                 About us
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="text-lg text-white font-mono transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                            <a href="#" className="text-lg text-white hover:text-blue-600 font-mono transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                                 Contact us
                             </a>
                         </li>
@@ -81,14 +81,14 @@ function LandingPage() {
 
                     </ul>
 
-                    <div className="pt-2">
-                        <button className="rounded bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition ease-in-out delay-150 duration-300" onClick={handleJobSearch}>
+                    <div className="">
+                        <button className="rounded font-mono bg-zinc-800 text-white px-4 py-2 hover:bg-blue-600 transition ease-in-out delay-150 duration-300" onClick={handleJobSearch}>
                             Search Job
                         </button>
                     </div>
 
-                    <div className="pt-2">
-                        <button className="rounded bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition ease-in-out delay-150 duration-300" onClick={handleSignOut}>
+                    <div className="">
+                        <button className="rounded font-mono bg-zinc-800 hover:bg-blue-600 text-white px-4 py-2 transition ease-in-out delay-150 duration-300" onClick={handleSignOut}>
                             Sign Out
                         </button>
                     </div>
@@ -97,7 +97,7 @@ function LandingPage() {
 
 
             {/* This is the main banner of the landing page */}
-            <section className="w-full h-[600px] bg-black flex justify-start">
+            <section className="w-full h-screen bg-black flex justify-start">
                 <div className="flex justify-between w-full h-full px-10">
                     <div className="flex flex-col justify-center w-1/2">
                         <div className="font-serif leading-tight">
@@ -110,7 +110,7 @@ function LandingPage() {
                     </div>
 
                     <div className="w-1/2">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" />
+                        {/* <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" /> */}
                     </div>
                 </div>
             </section>
@@ -128,9 +128,9 @@ function LandingPage() {
                 <div className="flex space-x-5 justify-between pt-10">
 
                     {/* This is the first card */}
-                    <div className="flex-col bg-zinc-700 border w-full h-[500px] p-2 shadow-white shadow-lg animate-fadeinup">
-                        <div className="bg-black w-full h-[40%]">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" />
+                    <div className="flex-col bg-zinc-700 border w-full h-[500px] p-2 shadow-white shadow-lg animate-fadeinup rounded">
+                        <div className="bg-black w-full h-[40%] rounded">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full rounded" />
                         </div>
                         <div className="w-full">
                             <p className="text-3xl font-serif py-4 px-1 text-white">Find Your Dream Job</p>
@@ -141,9 +141,9 @@ function LandingPage() {
                     </div>
 
                     {/* This is the second card  */}
-                    <div className="flex-col bg-zinc-700 border w-full h-[550px] p-2 shadow-white shadow-lg animate-fadeinup">
-                        <div className="bg-black w-full h-[40%]">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" />
+                    <div className="flex-col bg-zinc-700 border w-full h-[550px] p-2 shadow-white shadow-lg animate-fadeinup rounded">
+                        <div className="bg-black w-full h-[40%] rounded">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full rounded" />
                         </div>
                         <div className="w-full">
                             <p className="text-3xl font-serif py-4 px-1 text-white">Find Your Dream Job</p>
@@ -154,9 +154,9 @@ function LandingPage() {
                     </div>
 
                     {/* This is the third card  */}
-                    <div className="flex-col bg-zinc-700 border w-full h-[500px] p-2 shadow-white shadow-lg animate-fadeinup">
-                        <div className="bg-black w-full h-[40%]">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" />
+                    <div className="flex-col bg-zinc-700 border w-full h-[500px] p-2 shadow-white shadow-lg animate-fadeinup rounded">
+                        <div className="bg-black w-full h-[40%] rounded">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full rounded" />
                         </div>
                         <div className="w-full">
                             <p className="text-3xl font-serif py-4 px-1 text-white">Find Your Dream Job</p>
@@ -194,14 +194,14 @@ function LandingPage() {
                     </div>
                 </div>
 
-                <div className="w-[50%] h-full flex-col space-y-5 pt-36">
+                <div className="w-[50%] h-full flex-col space-y-5 pt-44">
                     <div className="flex-col justify-between w-full">
                         <div className="flex-col">
                             <label htmlFor="name" className="text-white font-serif text-sm w-[50%]">
                                 Name
                                 <br />
                             </label>
-                            <input type="text" id="name" className="w-full" />
+                            <input type="text" id="name" className="w-full py-2 px-2 rounded" required/>
                         </div>
 
                         <div className="flex-col pt-5">
@@ -209,7 +209,7 @@ function LandingPage() {
                                 Email
                                 <br />
                             </label>
-                            <input type="email" id="email" className="w-full" />
+                            <input type="email" id="email" className="w-full py-2 px-2 rounded" required/>
                         </div>
                     </div>
 
@@ -217,7 +217,7 @@ function LandingPage() {
                         <label htmlFor="message" className="text-white font-serif text-sm">
                             Message
                             <br />
-                            <textarea name="message" id="message" className="w-full h-32"></textarea>
+                            <textarea name="message" id="message" className="w-full h-32 text-black rounded p-2"></textarea>
                         </label>
                     </div>
 

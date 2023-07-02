@@ -41,7 +41,7 @@ const JobPortal = () => {
   ];
 
   return (
-    <div className="job-portal bg-black py-8">
+    <div className="job-portal h-screen w-full bg-black py-8">
       {/* Header */}
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-2 text-white">Job Portal</h1>

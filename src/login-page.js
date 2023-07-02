@@ -28,7 +28,7 @@ function Login() {
             <div className="flex justify-between w-full h-full">
                 <div className="w-[40%] h-full bg-black text-white">
                     {/* This place is left for adding image */}
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="h-full w-full" />
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image to be added" className="fill aspect-auto" />
                 </div>
 
                 {/* This is the main login form of the page */}
@@ -68,7 +68,7 @@ function Login() {
                         </div>
 
                         <div className="space-x-5 px-24 pt-4 flex justify-center">
-                            <button className="w-[30%] rounded bg-white text-black  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-xl font-bold" onClick={handleGoogleSignIn}>Google</button>
+                            <button className="w-[30%] rounded bg-white text-black  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-xl font-bold px-6 py-2 active:border-blue-600 active:text-blue-600" onClick={handleGoogleSignIn}>Google</button>
                         </div>
 
                         <div className="flex justify-center pt-3">
